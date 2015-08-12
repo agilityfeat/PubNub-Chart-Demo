@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Server</title>
+  <link rel="stylesheet" href="lib/semantic.min.css">
+  <script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="lib/semantic.min.js"></script>
+  <script src="lib/pubnub-3.7.13.min.js"></script>
+</head>
+<body>
+  <div class="ui inverted vertical masthead center aligned segment">
+    <button id="generate" class="ui massive button">Generate Data</button>
+    <button id="send" class="purple ui massive button disabled">Send Data</button>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="center aligned row">
+        <div class="sixteen wide column">
+          <h3 class="ui header">Generated Data:</h3>
+          <div class="ui four cards">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/server.pubnub.js"></script>
+  <script src="js/server.data.js"></script>
+</body>
+</html>
